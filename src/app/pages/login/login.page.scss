@@ -1,0 +1,23 @@
+ion-grid {
+    width: var(--full-screen-width);
+    height: var(--full-screen-height);
+    background-color: var(--color-white);
+}
+
+form{
+    height: var(--full-screen-height);
+}
+
+ion-row {
+    height: var(--full-screen-height);
+}
+
+ion-col {
+    display: block; 
+    margin: auto;
+    background: var(--color-white);
+}
+
+ion-button {
+    font-weight: var(--font-size-300);
+}

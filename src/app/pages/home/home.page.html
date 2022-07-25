@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Latest Movie
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngIf="movieDisplayed">
+    <img [src]="movieImageURL" />
+    <ion-card-header>
+      <ion-card-title>TITLE: {{ movieDisplayed.title }}</ion-card-title>
+      <ion-card-subtitle *ngIf="movieDisplayed.original_title">ORIGINAL TITLE: {{ movieDisplayed.original_title }}</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      <span *ngIf="movieDisplayed.overview">OVERVIEW: {{ movieDisplayed.overview }} <br></span>
+      <span *ngIf="movieDisplayed.original_language">ORIGINAL LANGUAGE: {{ movieDisplayed.original_language }} <br></span>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
