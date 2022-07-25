@@ -1,0 +1,7 @@
+{
+  "name": "plan-a-frontend-challenge-carlos-velazquez",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
